@@ -6,107 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio | devsiham</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="progress.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
-
-        .hero {
-            background-color: #0040C1;
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-            font-family: "Montserrat", sans-serif;
-        }
-
-        .hero__title {
-            color: #fff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 50px;
-            z-index: 1;
-        }
-
-        .cube {
-            position: absolute;
-            top: 80vh;
-            left: 45vw;
-            width: 10px;
-            height: 10px;
-            border: solid 1px #003298;
-            transform-origin: top left;
-            transform: scale(0) rotate(0deg) translate(-50%, -50%);
-            -webkit-animation: cube 12s ease-in forwards infinite;
-            animation: cube 12s ease-in forwards infinite;
-        }
-
-        .cube:nth-child(2n) {
-            border-color: #0051f4;
-        }
-
-        .cube:nth-child(2) {
-            -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-            left: 25vw;
-            top: 40vh;
-        }
-
-        .cube:nth-child(3) {
-            -webkit-animation-delay: 4s;
-            animation-delay: 4s;
-            left: 75vw;
-            top: 50vh;
-        }
-
-        .cube:nth-child(4) {
-            -webkit-animation-delay: 6s;
-            animation-delay: 6s;
-            left: 90vw;
-            top: 10vh;
-        }
-
-        .cube:nth-child(5) {
-            -webkit-animation-delay: 8s;
-            animation-delay: 8s;
-            left: 10vw;
-            top: 85vh;
-        }
-
-        .cube:nth-child(6) {
-            -webkit-animation-delay: 10s;
-            animation-delay: 10s;
-            left: 50vw;
-            top: 10vh;
-        }
-
-        @-webkit-keyframes cube {
-            from {
-                transform: scale(0) rotate(0deg) translate(-50%, -50%);
-                opacity: 1;
-            }
-
-            to {
-                transform: scale(20) rotate(960deg) translate(-50%, -50%);
-                opacity: 0;
-            }
-        }
-
-        @keyframes cube {
-            from {
-                transform: scale(0) rotate(0deg) translate(-50%, -50%);
-                opacity: 1;
-            }
-
-            to {
-                transform: scale(20) rotate(960deg) translate(-50%, -50%);
-                opacity: 0;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -197,88 +101,117 @@
             </div>
         </div>
     </section>
-    <section id="skills">
-        <div class="container reveal">
-            <div class="main-title">
-                <h1>Professional <span class="primery">Skills</span></h1>
-            </div>
-            <div class="skills-content ">
-                <div class="item-flex">
-                    <div class="card">
-                        <div class="skill-img item-flex">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVB4twv74Kv-OlgnOCa8NuMOP2DvpeK3kQcw&usqp=CAU"
-                                alt="">
-                        </div>
-                        <p class="item-flex">Html</p>
+    <secction id="skills" class="">
+        <div id="progress-section" class="">
 
-                    </div>
-                    <div class="card">
-                        <div class="skill-img item-flex">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png
-                        " alt="">
-                        </div>
-                        <p class="item-flex">Css</p>
-                    </div>
-                    <div class="card">
-                        <div class="skill-img item-flex">
-                            <img style="width: 50px;height: 50px;"
-                                src="https://www.godeltech.com/wp-content/uploads/2023/02/Technology-JS.svg" alt="">
-                        </div>
-                        <p class="item-flex">Javascript</p>
+            <div class="container  reveal  ">
+                <div class="main-title">
+                    <h1>Professional <span class="primery">Skills</span></h1>
+                </div>
+
+                <p>html</p>
+                <div class="progress">
+
+                    <div class="progress-bar" data-progress="70">
+                        <span>70%</span>
                     </div>
                 </div>
-                <div class="item-flex">
-                    <div class="card">
-                        <div class="skill-img item-flex">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png"
-                                alt="">
-                        </div>
-                        <p class="item-flex">C</p>
-                    </div>
-                    <div class="card">
-                        <div class="skill-img item-flex">
-                            <img src="https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png"
-                                alt="">
-                        </div>
-                        <p class="item-flex">C++</p>
-                    </div>
-                    <div class="card">
-                        <div class="skill-img item-flex">
-                            <img src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/programming%20languages/python.svg"
-                                alt="">
-                        </div>
-                        <p class="item-flex">Python</p>
+                <p>css</p>
+                <div class="progress">
+                    <div class="progress-bar " data-progress="60">
+                        <span>60%</span>
                     </div>
                 </div>
-                <div class="item-flex">
-                    <div class="card">
-                        <div class="skill-img item-flex">
-                            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="">
-                        </div>
-                        <p class="item-flex">Git</p>
+                <p>js</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="50">
+                        <span>50%</span>
                     </div>
                 </div>
+
+
+                <p>C</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="80">
+                        <span>80%</span>
+                    </div>
+                </div>
+                <p>C++</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="70">
+                        <span>70%</span>
+                    </div>
+                </div>
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="40">
+                        <span>40%</span>
+                    </div>
+                </div>
+                <p>Git</p>
+                <div class="progress">
+                    <div class="progress-bar" data-progress="50">
+                        <span>50%</span>
+                    </div>
+                </div>
+
+
             </div>
+
         </div>
-    </section>
-    <section id="work">
-        <div class="container reveal">
-            <div class="main-title">
-                <h1>My Creative <span class="primery"> Portfolio </span>Section</h1>
-            </div>
-            <div class="work-content item-flex">
-                <div class="item-card">
-                    sssssssssssssss
+        </section>
+
+        <section id=" work">
+            <div class="container reveal">
+                <div class="main-title">
+                    <h1>My Creative <span class="primery"> Portfolio </span>Section</h1>
                 </div>
-                <div class="item-card">
-                    sssssssssssssss
+                <div class="portfolio">
+                    <div class="card-content item-flex ">
+                        <div class="card">
+                            <div class="card-image" style="background-image: url(images/cap.jpeg);">
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"> <i class="fa-brands fa-github"></i></a>
+                                <a href="#"> demo</a>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-image" style="background-image: url(images/cap.jpeg);">
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"> <i class="fa-brands fa-github"></i></a>
+                                <a href="#"> demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content item-flex ">
+                        <div class="card">
+                            <div class="card-image" style="background-image: url(images/cap.jpeg);">
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"> <i class="fa-brands fa-github"></i></a>
+                                <a href="#"> demo</a>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-image" style="background-image: url(images/cap.jpeg);">
+                            </div>
+                            <div class="card-footer">
+                                <a href="#"> <i class="fa-brands fa-github"></i></a>
+                                <a href="#"> demo</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container"></div>
-    </section>
+        </section>
+
+        <section id="contact">
+            <div class="container"></div>
+        </section>
 
 
 
@@ -294,7 +227,7 @@
 
 
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
