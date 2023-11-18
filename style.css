@@ -843,32 +843,42 @@ textarea {
 
 @media (max-width : 767px) {
 
-
+    section {
+        padding: 20px 0px;
+    }
 
     .item-flex {
         flex-direction: column;
     }
 
     .card {
-        width: 250px;
+        width: 300px;
         height: 250px;
     }
 
     .card-image {
-        width: 250px;
+        width: 300px;
     }
 
     .card-footer {
-        width: 250px;
+        width: 300px;
     }
 
     #contact .container form input {
-        width: 250px;
+        width: 300px;
         height: 40px;
     }
 
+    #contact .container form .npt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
     #contact .container form textarea {
-        width: 250px;
+        width: 300px;
         height: 100px;
     }
 
