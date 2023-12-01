@@ -6,6 +6,7 @@
 
 body {
     height: auto;
+    background: var(--blue-2);
     color: var(--text-color);
     /* background: var(--blue-1); */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -365,26 +366,58 @@ section {
         0 0 100px #4fc3dc;
 }
 
-/* ***************************** */
-/* .area {
-    background: #4e54c8;
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-    width: 100%;
-    height: 100vh;
 
-
-} */
-
-/* ss */
 
 /* ***************** */
+@media (max-width: 996px) {
+
+    #home {
+        height: 90%;
+        margin-bottom: 122px;
+    }
+
+    #about {
+        height: 90%;
+        padding: 100px 0px;
+    }
+
+    .media {
+
+        height: 400px;
+        width: 100%;
+        margin-left: 45px;
+        margin-top: 45px;
+
+    }
+
+    .media ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        height: auto;
+        width: 90%;
+        height: 90%;
+    }
+
+
+}
+
+
 @media (max-width : 767px) {
+    #home {
+        /* border: 1px solid red; */
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
     #home .container {
         flex-direction: column;
 
     }
 
     .home-content {
+
         justify-content: center;
         align-items: center;
         padding: 10px;
@@ -397,7 +430,7 @@ section {
 
         width: 100%;
         margin-left: 25px;
-        margin-top: 30px;
+        margin-top: 0px;
 
     }
 
@@ -417,6 +450,10 @@ section {
 
     .hir {
         margin-top: 25px;
+    }
+
+    .btn-content {
+        margin-top: 34px;
     }
 }
 
@@ -459,6 +496,7 @@ img {
     } */
     #about {
         height: auto;
+        /* border: 1px solid red; */
     }
 
     #about .container {
@@ -504,199 +542,56 @@ img {
 }
 
 /* ************************ */
+.A {
 
-#skills,
-#progress-section {
-    background: var(--blue-2);
-}
-
-#progress-section {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.c-grand {
-
-    margin-top: 30px;
-}
-
-.grand {
-    font-size: 200px;
-    color: var(--green);
-    margin-top: 50px;
-}
-
-#skills .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    align-content: center;
-
-}
-
-#skills .container .main-title {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
-#skills .container p {
-    text-align: start;
+/* skill */
+#skill {
+    background: var(--blue-2);
+    /* border: 1px solid red; */
+    padding: 65px 0px;
+    height: auto;
+
 }
 
+#skill .container .card-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px#116375;
+    border-radius: 5px;
 
-.progress {
-    width: 60%;
-    height: 10px;
-    background: gray;
-    border-radius: 10px;
 }
 
-.progress .progress-bar {
-    width: 0;
-    opacity: 0;
-    height: 100%;
-    position: relative;
-    background: var(--green);
-    border-radius: 10px;
-    transition: all 1s ease-out;
-}
-
-.progress-bar span {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: var(--blue-2);
-    font-size: 10px;
+#skill .container p,
+.card-skill p {
+    padding: 5px;
+    font-size: 18px;
+    color: var(--text-color);
     font-weight: bolder;
 }
 
-#progress-section p {
-    margin-top: 20px;
-}
-
-
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.bar-container {
-    /* background: var(--gray); */
-    width: 100%;
-    padding: 10px;
-    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 25), 0 10px 10px rgba(0, 0, 0, 25); */
-}
-
-.skill .skill-contaner {
-    margin: 30px 0;
-    padding: 10px;
-}
-
-.list-tech {
-
-    width: 70%;
-}
-
-.bar {
-
-    height: 10px;
-    border: 1px solid #ffffff4b;
-    overflow: hidden;
-    display: block;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 25), 0 10px 10px rgba(0, 0, 0, 25);
-    animation: all 0.4 cubic-bezier(.25, .8, .25, 1);
-}
-
-.bar span {
-    height: 20px;
-    float: left;
-    background: linear-gradient(135deg, var(--green)0%, var(--text-color)100%);
-}
-
-.skill h3 {
-    margin: 5px;
-}
-
-.html {
-    width: 60%;
-    animation: html 3s;
-}
-
-
-.j {
-    width: 40%;
-    animation: html 3s;
-}
-
-
-
-.C {
-    width: 80%;
-    animation: html 3s;
-}
-
-@keyframes html {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 60%;
-    }
+#skill .container .img {
+    background: var(--green);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 
 }
 
-@keyframes html {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 80%;
-    }
+#skill .container img {
+    height: 80px;
+    width: 80px;
 }
 
-@media (max-width : 767px) {
-
-    #skills {
-        height: auto;
-    }
-
-    .item-flex {
-        flex-direction: column;
-    }
-
-    #skills .main-title {
-        font-size: 20px;
-    }
-
-    .skills-content .card {
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-
-
-
-}
 
 /* portfolio */
 #work {
@@ -841,6 +736,67 @@ textarea {
     flex-direction: column;
 }
 
+@media (max-width: 996px) {
+    section {}
+
+    .B {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-flex {}
+
+    .card {
+        height: 400px;
+        width: 400px;
+    }
+
+    .card-image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .card-footer {
+        height: 400px;
+        width: 400px;
+    }
+
+    #contact .container form input {
+        width: 300px;
+        height: 40px;
+    }
+
+    #contact .container form .npt {}
+
+    #contact .container form textarea {
+        width: 600px;
+    }
+
+    .footer .container div p {
+        font-size: 15px;
+    }
+
+    /* skil */
+    #skill .container .card-skill {
+        margin-top: 35px;
+    }
+
+    #skill .container .img {
+
+        height: 200px;
+        width: 200px;
+
+
+    }
+
+    #skill .container img {
+        height: 120px;
+        width: 120px;
+    }
+
+
+}
+
 @media (max-width : 767px) {
 
     section {
@@ -852,15 +808,17 @@ textarea {
     }
 
     .card {
-        width: 300px;
         height: 250px;
+        width: 300px;
     }
 
     .card-image {
+
         width: 300px;
     }
 
     .card-footer {
+
         width: 300px;
     }
 
@@ -886,5 +844,35 @@ textarea {
         font-size: 15px;
     }
 
+    /* skil */
+    #skill .container .card-skill {
+        margin-top: 35px;
+    }
 
+    #skill .container .img {
+
+        height: 200px;
+        width: 200px;
+
+
+    }
+
+    #skill .container img {
+        height: 120px;
+        width: 120px;
+    }
+
+
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
